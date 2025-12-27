@@ -1,0 +1,76 @@
+{ 
+    "op" : "insert", 
+    "ns" : "online.mid_transactions", 
+    "command" : {
+        "insert" : "mid_transactions", 
+        "ordered" : false, 
+        "writeConcern" : {
+            "w" : "majority"
+        }, 
+        "lsid" : {
+            "id" : UUID("4911ea08-a257-427e-9691-5c878be92d18")
+        }, 
+        "$db" : "online"
+    }, 
+    "ninserted" : NumberInt(1000), 
+    "keysInserted" : NumberInt(1000), 
+    "numYield" : NumberInt(0), 
+    "locks" : {
+        "ParallelBatchWriterMode" : {
+            "acquireCount" : {
+                "r" : NumberLong(2)
+            }
+        }, 
+        "ReplicationStateTransition" : {
+            "acquireCount" : {
+                "w" : NumberLong(3)
+            }
+        }, 
+        "Global" : {
+            "acquireCount" : {
+                "r" : NumberLong(1), 
+                "w" : NumberLong(2)
+            }
+        }, 
+        "Database" : {
+            "acquireCount" : {
+                "w" : NumberLong(2)
+            }
+        }, 
+        "Collection" : {
+            "acquireCount" : {
+                "w" : NumberLong(2)
+            }
+        }, 
+        "Mutex" : {
+            "acquireCount" : {
+                "r" : NumberLong(2)
+            }
+        }
+    }, 
+    "flowControl" : {
+        "acquireCount" : NumberLong(2), 
+        "timeAcquiringMicros" : NumberLong(2)
+    }, 
+    "writeConcern" : {
+        "w" : "majority", 
+        "wtimeout" : NumberInt(0), 
+        "provenance" : "clientSupplied"
+    }, 
+    "storage" : {
+
+    }, 
+    "responseLength" : NumberInt(45), 
+    "protocol" : "op_msg", 
+    "millis" : NumberInt(168), 
+    "ts" : ISODate("2022-01-07T02:26:52.593+0000"), 
+    "client" : "192.168.2.102", 
+    "appName" : "mongoimport", 
+    "allUsers" : [
+        {
+            "user" : "writeon", 
+            "db" : "admin"
+        }
+    ], 
+    "user" : "writeon@admin"
+}
